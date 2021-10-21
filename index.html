@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>
+    Odwzorowanie Strony
+  </title>
+
+
+</head>
+<style>
+  @import url("https://p.typekit.net/p.css?s=1&k=zfi0pyp&ht=tk&f=32861.32862.32864.32867.32869&a=26661982&app=typekit&e=css");
+
+  @font-face {
+    font-family: "hero-new";
+    src: url("https://use.typekit.net/af/f6ef0c/00000000000000003b9af1d7/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n3&v=3") format("woff2"),
+      url("https://use.typekit.net/af/f6ef0c/00000000000000003b9af1d7/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n3&v=3") format("woff"),
+      url("https://use.typekit.net/af/f6ef0c/00000000000000003b9af1d7/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n3&v=3") format("opentype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: "hero-new";
+    src: url("https://use.typekit.net/af/bcdde2/00000000000000003b9af1d8/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3") format("woff2"),
+      url("https://use.typekit.net/af/bcdde2/00000000000000003b9af1d8/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3") format("woff"),
+      url("https://use.typekit.net/af/bcdde2/00000000000000003b9af1d8/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n4&v=3") format("opentype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "hero-new";
+    src: url("https://use.typekit.net/af/ab749c/00000000000000003b9af1da/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n5&v=3") format("woff2"),
+      url("https://use.typekit.net/af/ab749c/00000000000000003b9af1da/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n5&v=3") format("woff"),
+      url("https://use.typekit.net/af/ab749c/00000000000000003b9af1da/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n5&v=3") format("opentype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "hero-new";
+    src: url("https://use.typekit.net/af/d27081/00000000000000003b9af1dd/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n6&v=3") format("woff2"),
+      url("https://use.typekit.net/af/d27081/00000000000000003b9af1dd/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n6&v=3") format("woff"),
+      url("https://use.typekit.net/af/d27081/00000000000000003b9af1dd/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n6&v=3") format("opentype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: "hero-new";
+    src: url("https://use.typekit.net/af/8db0ad/00000000000000003b9af1df/27/l?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n7&v=3") format("woff2"),
+      url("https://use.typekit.net/af/8db0ad/00000000000000003b9af1df/27/d?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n7&v=3") format("woff"),
+      url("https://use.typekit.net/af/8db0ad/00000000000000003b9af1df/27/a?primer=2a64b7354accbfccf091944358d6cba32f300a9a753ae564cfcf2ef3ec0bce66&fvd=n7&v=3") format("opentype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .tk-hero-new {
+    font-family: "hero-new", sans-serif;
+  }
+</style>
+<body>
+  <nav>
+    <div id="nav__head">
+      Julia Ramotowska
+    <div class="close-button"></div>
+    <div class="nav_burger"><div class="burger -visible"></div></div></div>
+    <a class="nav__phone"></a>
+    <ul class="">
+      <a href="#omnie">
+        <li>O mnie</li>
+      </a>
+      <a href="#opsychoterapii">
+        <li>O psychoterapii</li>
+      </a>
+      <a href="#dlakogo">
+        <li>Dla kogo?</li>
+      </a>
+      <a href="#oferta">
+        <li>Cennik</li>
+      </a>
+      <a href="#kontakt">
+        <li>Kontakt</li>
+      </a>
+    </ul>
+  </nav>
+  <div class="flexbox">
+    <div class="pink"></div>
+    <div class="picture"><img src="img/img-julia-ramotowska.png" alt="Fotografia Julii Ramotowskiej"></div>
+    <div class="first">
+      <span class="purple" style="text-align: left;"> Psycholog, psychoterapeutka <span class="purple-part"> psychodynamiczna</span></span>
+      <h1>
+        Julia Ramotowska
+      </h1>
+
+      <p id="opis">
+        Prowadzę psychoterapię indywidualną osób dorosłych oraz młodzieży, oferuję konsultacje psychologiczne
+        oraz psychoedukację
+      </p>
+      <a class="button" href="#omnie">
+        O mnie
+      </a>
+    </div>
+  </div>
+  <div id="omnie" class="center">
+    <span class="purple center">O MNIE</span>
+    <h2 class="center">Moje doświadczenie</h2>
+    <div class="container">
+      <p class="t-text">Jestem psychologiem oraz dyplomowaną psychoterapeutką psychodynamiczną. Ukończyłam
+        całościowe 4-letnie szkolenie w Krakowskim Centrum Psychodynamicznym rekomendowanym przez Polskie
+        Towarzystwo Psychologiczne.</br></br>Posiadam wieloletnie
+        doświadczenie pracy klinicznej oraz psychoterapeutycznej. Pracowałam w ramach oddziałów psychiatrycznych
+        i Poradni Zdrowia Psychicznego - zarówno w obszarze wsparcia psychologicznego, prowadzenia terapii
+        indywidulanej oraz grupowej, jak i diagnostyki psychologicznej.</br></br>Obecnie prowadzę praktykę
+        prywatną i koncentruję się na psychoterapii długoterminowej.</br></br>Moja praca podlega stałej
+        superwizji u certyfikowanych superwizorów, jestem członkiem zwyczajnym Polskiego Towarzystwa
+        Psychoterapii Psychodynamicznej.</p>
+    </div>
+  </div>
+  <div id="opsychoterapii">
+    <div class="center"><span class="purple center">O PSYCHOTERAPII</span></div>
+    <h2 class="center">Czym jest psychoterapia psychodynamiczna?</h2>
+    <div class="flex">
+      <div class="column">
+        <p class="t-text">Terapia psychodynamiczna, opierająca swe podstawy na teorii psychonalitycznej, jest
+          terapią mającą na celu umożliwienie wglądu w swoje emocje, motywy postępowania i przeżycia, które
+          często
+          mają swoje źródło w nieświadomości.</br></br> Ta nieświadomość powoduje bezwiedne powtarzanie
+          bolesnych
+          dla siebie schematów – w relacjach z innymi ludźmi, pracy zawodowej czy postrzeganiu
+          siebie.</br></br>
+          Uważne przyjrzenie się sobie, pogłębienie wiedzy w oparciu o rozmowę z profesjonalnym terapeutą,
+          daje
+          możliwość zmiany niekorzystnych i blokujących rozwój postaw.</p>
+      </div>
+      <div class="column-purple">
+        <div id="quotation-mark"></div>
+        <p class="t-text -white">"Swoją ofertę kieruję do osób gotowych na długoterminową terapię, chcących
+          zrozumieć
+          towarzyszące im
+          trudności w świetle swojej historii, aby móc nad nimi zapanować w sposób trwały, pozwalający na
+          czerpanie
+          większej satysfakcji z życia oraz rozwój zgodny z własnymi potrzebami."</p>
+        <a class="reverse-button" href="#oferta">Sprawdź ofertę</a>
+      </div>
+    </div>
+  </div>
+  <div id="dlakogo" class="forWho">
+    <div class="flex-two">
+    <div class="forWho__side-left">
+      <div><span class="purple">DLA KOGO?</span></div>
+      <h2>Do kogo skierowana jest terapia psychodynamiczna?</h2>
+    </div>
+    <div class="forWho__side">
+      <p class="text-forWho">Terapia psychodynamiczna jest skierowana do osób przeżywających problemy
+        emocjonalne,
+        które szeroko wpływają na ich funkcjonowanie.</p>
+    </div>
+  </div>
+    <div class="flex-one">
+      <div class="box">
+        <h3>Objawy lękowe</h3>
+        <p class="t-text-small">unikanie stresujących sytuacji lub kontaktów społecznych, ataki lęku panicznego, lęk
+          fobiczny, objawy psychosomatyczne</p>
+      </div>
+      <div class="box">
+        <h3>Problemy interpersonalne</h3>
+        <p class="t-text-small">konflikty, problemy w pracy lub szkole, nawiązywanie destrukcyjnych relacji, brak
+          możliwości wejścia w stały związek, problemy wychowawcze</p>
+      </div>
+      <div class="box">
+        <h3>Obniżony nastrój</h3>
+        <p class="t-text-small">w tym objawy depresyjne lub chwiejny nastrój, także poczucie smutku po urodzeniu dziecka</p>
+      </div>
+      <div class="box">
+        <h3>Zaburzenia odżywiania</h3>
+        <p class="t-text-small">Anoreksja, bulimia</p>
+      </div>
+      <div class="box">
+        <h3>Brak sensu życia</h3>
+        <p class="t-text-small">poczucie, że nie potrafi się znaleźć sensu życia, określić swojej tożsamości, pragnienie zrozumienia siebie</p>
+      </div>
+      <div class="box">
+        <h3>Doświadczenia psychozy</h3>
+        <p class="t-text-small">diagnoza schizofrenii, epizod psychotyczny</p>
+      </div>
+      <div class="box">
+        <h3>Kryzys życiowy</h3>
+        <p class="t-text-small">w wyniku nagłych zmian, do których trudno się zaadaptować: zmiany miejsca zamieszkania, pracy, kryzys w związku, nowy etap rozwoju dziecka (np. wyprowadzka z domu)</p>
+      </div>
+      <div class="box">
+        <h3>Doświadczenia traumy</h3>
+        <p class="t-text-small">doświadczenie traumy, nieradzenie sobie ze stresem</p>
+      </div>
+    </div>
+  </div>
+  <div class="tariff-background">
+    <div id="oferta" class="tariff">
+      <div class="left-tariff">
+        <span class="purple center">Cennik</span>
+        <h2>Terapia psychodynamiczna oraz konsultacje psychologiczne</h2>
+        <p class="t-text">Konsultacje to etap potrzebny na rozpoznanie problemu i dobranie jak najlepszej formy pomocy.
+          Podczas konsultacji przekazuję również kluczowe informacje dotyczące prowadzonej przeze mnie formy terapii,
+          aby pacjent mógł podjąć przemyślaną decyzję co do dalszej współpracy.</p>
+        <a class="button" href="#kontakt">Umów konsultację</a>
+      </div>
+      <div class="right-tariff">
+        <div class="price">
+          <div class="inline-flex">
+            <h3>Konsultacja</h3>
+            <p class="price__color">140 zł/50 min</p>
+          </div>
+          <p class="t-text">Są to na ogół 1-3 spotkania trwające 50 minut podczas których omawia się trudności
+            towarzyszące osobie i możliwości w zakresie podjęcia terapii.</p>
+        </div>
+        <div class="price">
+          <div class="inline-flex">
+            <h3>Konsultacja on-line</h3>
+            <p class="price__color">140 zł/50 min</p>
+          </div>
+          <p class="t-text">W trosce o bezpieczeństwo pacjentów przewiduję także możliwość konsultacji przez internet
+            lub telefon.</p>
+        </div>
+        <div class="price">
+          <div class="inline-flex">
+            <h3>Terapia</h3>
+            <p class="price__color">120-140zł/50 min</p>
+          </div>
+          <p class="t-text">Koszt sesji umawiany indywidualnie po zawarciu kontraktu terapeutycznego</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div id="kontakt" class="centerbox">
+      <div class="card">
+        <h3>Skontaktuj się ze mną, aby umówić termin konsultacji</h3>
+        <p class="contact-phone"><a>+48 502 518 539</a></p>
+        <p class="contact-mail"><a>jk.ramotowska@gmail.com</a></p>
+      </div>
+      <div class="bottom">
+        <div class="createdBy">
+          <div>Website created by <a href=#>Katarzyna</a></div>
+          <div>Julia Ramotowska 2021</div>
+        </div>
+        <div class="footer__flex__list">
+          <div class="flexRow">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href=#omnie>O mnie</a></li>
+              <li><a href=#opsychoterapii>O psychoterapii</a></li>
+              <li><a href=#dlakogo>Dla kogo?</a></li>
+              <li><a href=#oferta>Cennik</a></li>
+            </ul>
+          </div>
+          <div class="flexRow">
+            <h4>O firmie</h4>
+            <ul>
+              <li>Julia Ramotowska Self</li>
+              <li>NIP: 5213318929</li>
+              <li>REGON: 146043401</li>
+              <li><a href=#>Polityka prywatności</a></li>
+            </ul>
+          </div>
+          <div class="flexRow" id="flexRow_wide">
+            <h4>Adres</h4>
+            <ul>
+              <li>al. Niepodległości 76/78 lok. 12, <span class="flexRow_li_narrow">3 piętro (dostępna winda), wejście od podwórka</span></li>
+              <li class="flexRow_li_wide">3 piętro (dostępna winda), wejście od podwórka</li>
+              <li>5 minut spacerem od Metro Racławicka</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style="clear: both"></div>
+    </div>
+  </footer>
+  <script>
+    const navlist = document.querySelector("nav>ul");
+    const closebutton = document.querySelector(".close-button");
+    const burger = document.querySelector(".burger");
+    const navburger = document.querySelector(".nav_burger");
+    const nav = document.querySelector("nav")
+
+    nav.onclick = function(event){
+      event.stopPropagation()
+      navlist.classList.toggle("-visible");
+      closebutton.classList.toggle("-visible");
+      burger.classList.toggle("-unvisible");
+      navburger.classList.toggle("-unvisible");
+      nav.classList.toggle("-visible")
+    };
+
+  </script>
+</body>
